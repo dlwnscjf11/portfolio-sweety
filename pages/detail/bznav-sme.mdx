@@ -1,0 +1,24 @@
+import DetailLayout from '../../components/Layouts/DetailLayout/DetailLayout';
+export const meta = {
+  slug: 'bznav-sme',
+  title: 'BZNAV 사업자 웹 애플리케이션',
+  description: 'Getting started with the Next framework',
+};
+
+export default ({ children }) => <DetailLayout meta={meta}>{children}</DetailLayout>;
+
+## 주요작업 요약
+
+- **거래처 관리, 사업체 생성, 구성원 관리, 공동인증서 관리, 데이터 연동 기능**을 개발하였습니다.
+- **공통 통합 증빙 조회 페이지**를 구현하였습니다.
+- URL Query Params와 필터 데이터가 실시간으로 **양방향으로 반영**되는 기능을 구현하였습니다.
+- 디자인 시스템 **Date Picker**를 구현하였습니다.
+- 글로벌 네비게이션 바(GNB)를 구현하였습니다.
+- Angular 10부터 시작하여 **Angular 11, 12** 버전으로 마이그레이션하는 작업을 진행했습니다.
+- **레거시 Third-party**(echarts 등)를 최신 버전으로 마이그레이션하는 작업을 진행했습니다.
+- 디자인 시스템 단위 스타일 분리 작업을 진행하였습니다.
+  - **공통 스타일**을 분리하고 개선하였습니다.
+  - 앱 전역에서 사용하는 **공통 레이아웃 컴포넌트**를 구현하였습니다.
+  - **Modal, Dialog, Badge** 등 공통으로 사용하는 컴포넌트를 구현하였습니다.
+- Fullstory, Firebase Google Analytics, Microsoft Clarity 등의 **매트릭 수집 SaaS 적용**하였습니다.
+- iframe을 통해 통합된 **외부 서비스의 매트릭 로깅 기능**을 구현하였습니다.

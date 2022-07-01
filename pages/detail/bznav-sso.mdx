@@ -1,0 +1,20 @@
+import DetailLayout from '../../components/Layouts/DetailLayout/DetailLayout';
+export const meta = {
+  slug: 'bznav-sso',
+  title: 'BZNAV SSO 애플리케이션',
+  description: 'Getting started with the Next framework',
+};
+
+export default ({ children }) => <DetailLayout meta={meta}>{children}</DetailLayout>;
+
+## 주요작업 요약
+
+- UI 라이브러리 없이 디자인 컴포넌트를 구현하였습니다.
+- **로그인 뷰**를 구현하였습니다.
+- 휴대폰 인증을 위한 **인증번호 전송 및 검증 기능**을 구현하였습니다.
+- **회원가입 뷰**를 구현하였습니다.
+  - **비동기적으로 이메일 중복을 검사**하는 기능을 구현하였습니다.
+  - 입력한 **폼의 유효성을 검사**하는 기능을 구현하였습니다.
+  - 서비스 약관 동의 및 약관 상세 모달을 구현하였습니다.
+- **비밀번호 재설정** 기능 및 뷰를 구현하였습니다.
+- 추후에 통신 로직과 뷰 로직을 분리하는 **리팩토링** 작업을 진행하였습니다.
